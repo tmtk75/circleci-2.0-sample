@@ -2,11 +2,10 @@ version: 2
 jobs:
   build:
     docker:
-      #- image: circleci/golang:1.8
       - image: docker:17.05.0-ce-git
 
     working_directory: /build
 
     steps:
       - run: |
-          apk add --no-cache py-pip=9.0.0-r1
+          apk add --no-cache make jq
