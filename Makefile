@@ -1,2 +1,3 @@
 build:
+	ls / > artifact
 
