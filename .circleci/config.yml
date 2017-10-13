@@ -12,8 +12,8 @@ jobs:
     steps:
       - checkout
 
-      - run: |
-          apk add --no-cache make jq
+      # - run: |
+      #     apk add --no-cache make jq
 
       - run:
           name: Build
