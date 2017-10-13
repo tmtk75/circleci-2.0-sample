@@ -27,6 +27,7 @@ jobs:
           name: Deploy if tagged
           command: |
             # if [ ! -z "$CIRCLE_TAG" ]; then
+            echo ${CIRCLE_TAG}
             if [[ "${CIRCLE_TAG}" =~ ^v([0-9]+\.[0-9]+\.[0-9]+)$ ]]; then
               version=${BASH_REMATCH[1]}
               cat artifact
