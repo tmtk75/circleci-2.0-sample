@@ -14,15 +14,11 @@ jobs:
 
       - run:
           name: Build
-          command: pwd
+          command: make build
 
       - run:
-          name: Build
-          command: ls
-
-      - run:
-          name: Build
-          command: make
+          name: Test
+          command: make test
 
       - deploy:
           name: Deploy if tagged
